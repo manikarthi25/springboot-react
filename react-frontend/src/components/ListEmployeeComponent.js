@@ -6,14 +6,13 @@ class ListEmployeeComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            employees:[]
+            employees: []
         }
     }
 
     componentDidMount() {
         EmployeeService.getEmployee().then((response) => {
-            this.setState({employees : response.data});
-            console.log(this.employees);
+            this.setState({employees : response.data});            
         })
     }
 

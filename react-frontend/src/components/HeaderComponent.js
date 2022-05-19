@@ -16,7 +16,12 @@ class HeaderComponent extends Component {
                 <header>
                     <nav className = 'navbar navbar-expand-md navbar-dark bg-dark'>
                         <div>
-                            <a href = "https://github.com/manikarthi25/springboot-react" className='navbar-brand'>Employee Management Application</a>
+                            <a href = "http://localhost:3000" className='navbar-brand'>Home</a>
+                            <a href = "http://localhost:3000/employees" className='navbar-brand'>Employees Details</a>
+                            <a href = "http://localhost:3000/add-employee" className='navbar-brand'>Add Employee</a>
+                            <a href = "http://localhost:3000/update-employee" className='navbar-brand'>Update Employee</a>
+                            <a href = "http://localhost:3000/navigate" className='navbar-brand'>Test Navigate</a>
+
                         </div>
                     </nav>
                 </header>

@@ -1,0 +1,52 @@
+Keyword
+And
+Or
+Is
+Equals
+Between
+LessThan
+LessThanEqual
+GreaterThan
+GreaterThanEqual
+After
+Before
+IsNull
+IsNotNull,NotNull
+Like
+NotLike
+StartingWith
+EndingWith
+Containing
+OrderBy
+Not
+In
+NotIn
+True
+False
+IgnoreCase
+
+
+… where x.lastname = ?1 and x.firstname = ?2
+… where x.lastname = ?1 or x.firstname = ?2
+… where x.firstname = ?1
+… where x.startDate between ?1 and ?2
+… where x.age < ?1
+… where x.age <= ?1
+… where x.age > ?1
+… where x.age >= ?1
+… where x.startDate > ?1
+… where x.startDate < ?1
+… where x.age is null
+… where x.age not null
+… where x.firstname like ?1
+… where x.firstname not like ?1
+… where x.firstname like ?1(parameter bound with appended %)
+… where x.firstname like ?1(parameter bound with prepended %)
+… where x.firstname like ?1(parameter bound wrapped in %)
+… where x.age = ?1 order by x.lastname desc
+… where x.lastname <> ?1
+… where x.age in ?1
+… where x.age not in ?1
+… where x.active = true
+… where x.active = false
+… where UPPER(x.firstame) = UPPER(?1)

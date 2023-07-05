@@ -25,6 +25,11 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeRepo employeeRepo;
 
+	@GetMapping("/status")
+	public String getAppStatus() {
+		return "success";
+	}
+	
 	@GetMapping("/employees")
 	public List<Employee> getEmployees() {
 		return employeeRepo.findAll();
